@@ -1,0 +1,11 @@
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\DualLab_Shakhrai.exe.config
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\DualLab_Shakhrai.exe
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\DualLab_Shakhrai.pdb
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\NodaTime.dll
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\NodaTime.pdb
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Release\NodaTime.xml
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Release\DualLab_Shakhrai.csprojResolveAssemblyReference.cache
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Release\DualLab_Shakhrai.csproj.CoreCompileInputs.cache
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Release\DualLab_Shakhrai.csproj.CopyComplete
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Release\DualLab_Shakhrai.exe
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Release\DualLab_Shakhrai.pdb

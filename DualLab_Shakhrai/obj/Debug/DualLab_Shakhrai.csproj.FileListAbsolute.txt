@@ -1,0 +1,11 @@
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\DualLab_Shakhrai.exe.config
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\DualLab_Shakhrai.exe
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\DualLab_Shakhrai.pdb
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Debug\DualLab_Shakhrai.csprojResolveAssemblyReference.cache
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Debug\DualLab_Shakhrai.csproj.CoreCompileInputs.cache
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Debug\DualLab_Shakhrai.exe
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Debug\DualLab_Shakhrai.pdb
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\NodaTime.dll
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\NodaTime.pdb
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\bin\Debug\NodaTime.xml
+D:\Projects\DualLab_Shakhrai\DualLab_Shakhrai\obj\Debug\DualLab_Shakhrai.csproj.CopyComplete
