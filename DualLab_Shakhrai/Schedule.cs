@@ -15,44 +15,35 @@ namespace DualLab_Shakhrai
 
         public void Optimize()
         {
-            var result = new List<BusRide>();
-            _listRides = _listRides.OrderBy(x => x.Start).ToList();
-
-            foreach (var ride in _listRides)
+            var rawList = _listRides.Select(r => (Ride: r, Delete: false)).ToArray();
+            for (int i = 0; i < rawList.Length; i++)
             {
-                if (ride.Duration > Duration.FromHours(1))
-                    continue;
-
-                if (result.Count == 0)
+                if (rawList[i].Ride.Duration > Duration.FromHours(1))
                 {
-                    result.Add(ride);
-                    continue;
+                    rawList[i].Delete = true;
                 }
 
-                if (ride.StartInMinutes == (result[result.Count - 1].StartInMinutes)
-                    && ride.EndInMinutes == (result[result.Count - 1].EndInMinutes))
+                for (int j = 0; j < rawList.Length; j++)
                 {
-                    if (ride.CompanyName == CompanyName.Posh)
+                    if (i == j || rawList[i].Delete || rawList[j].Delete) continue;
+                    if (rawList[i].Ride.StartInMinutes == rawList[j].Ride.StartInMinutes 
+                        && rawList[i].Ride.EndInMinutes == rawList[j].Ride.EndInMinutes)
                     {
-                        result.RemoveAt(result.Count - 1);
-                        result.Add(ride);
+                        if (rawList[i].Ride.CompanyName == CompanyName.Grotty) rawList[i].Delete = true;
+                        else rawList[j].Delete = true;
                         continue;
                     }
-                    else continue;
-                }
 
-                if (ride.StartInMinutes >= (result[result.Count - 1].StartInMinutes) 
-                    && ride.EndInMinutes <= (result[result.Count - 1].EndInMinutes))
-                {
-                    result.RemoveAt(result.Count - 1);
-                    result.Add(ride);
-                    continue;
+                    if ((rawList[i].Ride.StartInMinutes >= rawList[j].Ride.StartInMinutes) 
+                        && (rawList[i].Ride.EndInMinutes <= rawList[j].Ride.EndInMinutes))
+                    {
+                        rawList[j].Delete = true;
+                    }
                 }
-
-                result.Add(ride);
             }
 
-            _listRides = result.OrderByDescending(r => r.CompanyName.ToString()).ThenBy(r => r.Start).ToList();
+            _listRides = rawList.Where(x => x.Delete == false).Select(x => x.Ride).ToList();
+            _listRides = _listRides.OrderByDescending(r => r.CompanyName.ToString()).ThenBy(r => r.Start).ToList();
         }
     }
 }
